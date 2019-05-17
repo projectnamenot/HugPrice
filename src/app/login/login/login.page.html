@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="light" >
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="Password" value=""></ion-input>
+      </ion-item>
+
+<div padding>
+      <ion-button color="success" shape="round" expand="full" (click)="onClick()">
+        Login
+      </ion-button>
+</div>
+
+<div>
+    <ion-button color="danger" shape="round" fill="outline" (click)="logniGoogle()">
+        Google
+      </ion-button>
+      <ion-button color="primary" shape="round" fill="outline" (click)="loginFacebook()">
+          Facebook
+        </ion-button>
+
+      
+
+</div>
+
+<div padding>
+  <a routerLink="/register">Register</a>
+</div>
+
+  </ion-list>
+
+</ion-content>
